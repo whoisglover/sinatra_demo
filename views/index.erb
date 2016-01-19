@@ -1,0 +1,12 @@
+
+<h1>DBC Coaches Page</h1>
+<ul>
+<% @coaches.each_with_index do |coach, index|%>
+
+  <li><a href="/coaches/<%= index %>"><p><%= coach %></p></a></li>
+
+
+<% end %>
+</ul>
+
+<a href="/coaches/new">Add a new coach</a>
